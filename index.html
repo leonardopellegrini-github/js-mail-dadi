@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controlla Mail e Gioco dei dadi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+  
+  <!--Controlla se l'utente esiste-->
+  <div class="wrapper rosso align-items-center d-flex justify-content-center">
+    <div class="blocco mail flex-column">
+      <label for="email">Inserisci la mail</label>
+      <input type="email">
+      <input type="submit">
+    </div>
+  </div>
+
+  <!--Lancia i dadi-->
+  <div class="wrapper grigio align-items-center d-flex flex-column justify-content-center">
+    <div class="blocco dadi">
+      <div class="box utente d-flex align-items-center justify-content-center">
+        numero utente
+      </div>
+      <div class="box computer d-flex align-items-center justify-content-center">
+        numero computer
+      </div>
+      <input type="submit" placeholder="Gioca">
+    </div>
+  </div>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.wrapper{
+  height: 100vh;
+}
+
+.rosso{
+  background-color: brown;
+  color: white;
+}
+
+.grigio{
+  background-color: rgb(87, 87, 87);
+  color: black;
+}
+
+.box{
+  height: 100px;
+  width: 100px;
+  color: white;
+}
+
+
+.none{
+  display: none;
+}
