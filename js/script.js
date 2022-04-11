@@ -9,7 +9,26 @@ CONTROLLARE LE EMAIL
 */
 
 //inserisco database
-const database = ['leonardo@gmail.com', 'franco@hotmail.com', 'bamba@hotmail.com','capo@capo.au', 'prova@prova.org', 'noname@hotmail.com', 'yolo@mail.it', 'lpg@account.com',]
+const database = ['leonardo@gmail.com', 'franco@hotmail.com', 'bamba@hotmail.com','capo@capo.au', 'prova@prova.org', 'noname@hotmail.com', 'yolo@mail.it', 'lpg@account.com',];
+
+
+let lamiamail = prompt('Inserisci la tua mail');
+let messaggio = document.getElementById('messaggio');
+let emailtrovata = false;
+
+for (let i = 0; i < database.length; i++){
+
+  if(lamiamail = database[i]){
+    emailtrovata = true;
+  
+  }
+
+  if (emailtrovata = true) {
+    document.getElementById('messaggio').innerHTML = 'Sei registrato';
+  } else{
+    document.getElementById('messaggio').innerHTML = 'Non sei registrato';
+  }
+}
 
 
 
