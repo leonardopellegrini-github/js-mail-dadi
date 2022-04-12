@@ -12,27 +12,33 @@ CONTROLLARE LE EMAIL
 const database = ['leonardo@gmail.com', 'franco@hotmail.com', 'bamba@hotmail.com','capo@capo.au', 'prova@prova.org', 'noname@hotmail.com', 'yolo@mail.it', 'lpg@account.com',];
 
 
-let lamiamail = prompt('Inserisci la tua mail');
-let messaggio = document.getElementById('messaggio');
+//chiedo la mail
+const lamiamail = prompt('Inserisci la tua mail');
+
+//variabile per controllare che la mail sia presente all'interno del database
 let emailtrovata = false;
 
+
+//controllo che la mail sia presente all'interno del database
 for (let i = 0; i < database.length; i++){
-
-  if(lamiamail = database[i]){
+  console.log(database[i]);
+  if (database[i] === lamiamail){
     emailtrovata = true;
-  
-  }
-
-  if (emailtrovata = true) {
-    document.getElementById('messaggio').innerHTML = 'Sei registrato';
-  } else{
-    document.getElementById('messaggio').innerHTML = 'Non sei registrato';
   }
 }
 
+//inserisco variabile per stampare
+let output;
 
+//sceglie il messaggio da stampare a seconda del risultato
+if (emailtrovata){
+  output = 'Sei un membro';
+}else{
+  output = "Non fai parte del club";
+}
 
-
+//STAMPO IL RISULTATO NELL'H1
+document.getElementById('output').innerHTML = output;
 
 
 /*
