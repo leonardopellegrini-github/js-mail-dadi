@@ -54,3 +54,20 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 */
 
+const gioca = document.querySelector ('#gioca');
+
+const utente= Math.ceil(Math.random()* 6);
+const computer= Math.ceil(Math.random()* 6);
+
+let testo;
+
+if (utente > computer){
+  testo = 'Hai vinto';
+}if else (utente = computer){
+  testo = 'Hai pareggiato';
+} else (utente < computer ) {
+  testo = 'Hai perso';
+}
+
+document.getElementById('utente').innerHTML = utente;
+document.getElementById('computer').innerHTML = computer;
